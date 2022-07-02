@@ -22,11 +22,9 @@ const Stories = () => {
       {caracter.map((item) => {
         return (
           <div className="data-items flex flex-col items-center" key={item.id}>
-            {/* <img src={`${item.thumbnail.path}.jpg`} alt={item.name} /> */}
             <div className="card shadow-shadow-card rounded-xl w-250 h-180 flex justify-center items-center p-6">
               <span>{item.title}</span>
             </div>
-            {/* <p>{item.description}</p> */}
           </div>
         )
       })}

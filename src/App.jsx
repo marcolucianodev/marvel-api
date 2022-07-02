@@ -6,7 +6,6 @@ import Comics from "./pages/Comics";
 import Events from "./pages/Events";
 import Series from "./pages/Series";
 import Stories from "./pages/Stories";
-import Details from "./pages/Details";
 
 const App = () => {
 
@@ -21,7 +20,6 @@ const App = () => {
             <Route path="/eventos" element={<Events />} />
             <Route path="/series" element={<Series />} />
             <Route path="/historias" element={<Stories />} />
-            <Route path="/details/:id" element={<Details />} />
           </Routes>
         </Container>
       </BrowserRouter>

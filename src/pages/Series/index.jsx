@@ -25,7 +25,6 @@ const Series = () => {
             <div className="card shadow-shadow-card rounded-xl">
               <img className="rounded-t-xl" src={`${item.thumbnail.path}.jpg`} alt={item.name} />
               <span className="pl-2.5 py-4 block font-black">{item.title}</span>
-              {/* <p>{item.description}</p> */}
             </div>
           </div>
         )
