@@ -1,6 +1,10 @@
 # Marvel API
 
-[![Projeto Online](https://github.com/marcolucianodev/list-movies/blob/master/public/list-movies.png)](https://react-list-movies.netlify.app/)
+[![Projeto Online](https://github.com/marcolucianodev/marvel-api/blob/master/public/marvel-api1.png)](https://react-list-movies.netlify.app/)
+
+[![Projeto Online](https://github.com/marcolucianodev/marvel-api/blob/master/public/marvel-api2.png)](https://react-list-movies.netlify.app/)
+
+[![Projeto Online](https://github.com/marcolucianodev/marvel-api/blob/master/public/marvel-api3.png)](https://react-list-movies.netlify.app/)
 
 Projeto com listagem de dados dos personagens da Marvel. Caracteres, Quadrinhos, Eventos, Séries e Histórias.
 
@@ -38,5 +42,6 @@ $ npm start
 As seguintes tecnologias foram usadas na construção do projeto:
 
 - [React](https://pt-br.reactjs.org/)
+- [React Router](https://reactrouter.com/)
 - [Tailwind CSS](https://tailwindcss.com/)
-- [Marvel API](https://www.themoviedb.org/documentation/api?language=pt-BR)
+- [Marvel API](https://developer.marvel.com/)
