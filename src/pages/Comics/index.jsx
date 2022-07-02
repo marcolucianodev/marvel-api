@@ -1,0 +1,36 @@
+import { useEffect, useState } from "react";
+import { comicsUrl, baseExtensionImage } from "../../config/url";
+import MainContent from "../../components/MainContent";
+
+const Comics = () => {
+
+  const [caracter, setCaracter] = useState([]);
+
+  useEffect(() => {
+
+    fetch(comicsUrl)
+      .then(response => response.json())
+      .then(jsonData => {
+        setCaracter(jsonData.data.results);
+        console.log(jsonData.data.results);
+      })
+
+  }, [])
+
+  return (
+    <MainContent>
+      {caracter.map((item) => {
+        return (
+          <div className="data-items flex flex-col items-center" key={item.id}>
+            <div className="card shadow-shadow-card rounded-xl">
+              <img className="rounded-t-xl" src={`${item.thumbnail.path}${baseExtensionImage}`} alt={item.name} />
+              <span className="pl-2.5 py-4 block font-black">{item.title}</span>
+            </div>
+          </div>
+        )
+      })}
+    </MainContent>
+  )
+}
+
+export default Comics;
